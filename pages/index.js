@@ -8,7 +8,7 @@ import sunRisingLoop from '@iconify/icons-line-md/sun-rising-loop';
 
 export default function Home() {
 
-  const apiKey = "c68842fc16458b0362552d963f57f56d"
+  const apiKey = "e9072639309082a40bdab6d9f2f1d809"
   const location = "vancouver"
   const units ="metric"
   const url = `https://api.openweathermap.org/data/2.5/forecast?` + `q=${location}&units=${units}&appid=${apiKey}`
