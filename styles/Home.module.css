@@ -41,9 +41,24 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(3, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
+  align-items: center;
+}
+
+.grid > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px -1px #0000001a;
+  padding: 0.7rem 1.2rem;
+  margin: 2rem 1rem;
 }
 
 .card {
@@ -182,7 +197,7 @@
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
-    max-width: 320px;
+    max-width: 350px;
     text-align: center;
   }
 
@@ -275,4 +290,51 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.location > .info {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Genos', sans-serif;
+  text-align: center;
+}
+
+.update {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Genos', sans-serif;
+  color: #454F57;
+  text-align: right;
+}
+
+div.info {
+  font-weight: 600;
+  color: #454F57;
+  text-align: right;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.info a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #fcfcfc;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
 }
