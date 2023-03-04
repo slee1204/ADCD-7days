@@ -11,7 +11,7 @@ export default function Home() {
   const apiKey = "e9072639309082a40bdab6d9f2f1d809"
   const location = "vancouver"
   const units ="metric"
-  const url = `https://api.openweathermap.org/data/2.5/forecast?` + `q=${location}&units=${units}&appid=${apiKey}`
+  const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=${units}&appid=${apiKey}`
   
   const [data, setData] = useState()
   const grabWeather = useRef(false)
